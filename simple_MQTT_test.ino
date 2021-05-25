@@ -19,15 +19,15 @@
 #include <DHT.h> //DHT sensor library
 
 /*********************Configure these settings**********************/
-const char* Wifi_ssid     = "I5401";                  //Wifi network SSID
-const char* Wifi_password = "180119b606";             //Wifi password
-const char broker[] = "io.adafruit.com";     //MQTT broker address
-int        port     = 1883;                  //MQTT broker TCP port number, default is 1883 for unsecure
-const char* mqtt_user = "grschmid";                 //MQTT user name
-const char* mqtt_password = "aio_vJLi97T09lQ9Chie1TCX8G877fNQ";             //MQTT password 
-const char* topic1 = "grschmid/feeds/temp";           //MQTT publish topic name 1, for Adafruit IO, the full topic is "mqtt_user/feeds/topic1"
-const char* topic2 = "grschmid/feeds/humidity";       //MQTT publish topic name 2, for Adafruit IO, the full topic is "mqtt_user/feeds/topic2"
-const char* topic3 = "grschmid/feeds/led";            //MQTT subscribe topic name, for Adafruit IO, the full topic is "mqtt_user/feeds/topic3"
+const char* Wifi_ssid     = "";                  //Wifi network SSID
+const char* Wifi_password = "";             //Wifi password
+const char broker[] = "";     //MQTT broker address
+int        port     = ;                  //MQTT broker TCP port number, default is 1883 for unsecure
+const char* mqtt_user = "";                 //MQTT user name
+const char* mqtt_password = "";             //MQTT password 
+const char* topic1 = "";           //MQTT publish topic name 1, for Adafruit IO, the full topic is "mqtt_user/feeds/topic1"
+const char* topic2 = "";       //MQTT publish topic name 2, for Adafruit IO, the full topic is "mqtt_user/feeds/topic2"
+const char* topic3 = "";            //MQTT subscribe topic name, for Adafruit IO, the full topic is "mqtt_user/feeds/topic3"
 int samplerate1 = 5000;                        //how often do we take a measurement and publish it (in milliseconds)
 int samplerate2 = 100;                         //how often we check topic3 that we're subscribed to
 /*********************************************************************/
